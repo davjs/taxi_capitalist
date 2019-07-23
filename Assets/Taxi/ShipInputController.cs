@@ -12,9 +12,7 @@ public class ShipInputController : MonoBehaviour
     public void Update()    //Read inputs and distribute to other scripts
     {
             horizontal = Input.GetAxis("Horizontal");
-            Debug.Log(horizontal);
             vertical = Input.GetAxis("Vertical");
-       
     }
 
     private void OnDrawGizmos()
