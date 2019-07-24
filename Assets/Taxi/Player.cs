@@ -12,5 +12,31 @@ namespace Taxi
         {
             Money += money;
         }
+
+        public Color GetColor()
+        {
+            if (Id.Equals("1"))
+            {
+                return Color.red;
+            }
+
+            if (Id.Equals("2"))
+            {
+                return Color.blue;
+            }
+
+            if (Id.Equals("3"))
+            {
+                return Color.green;
+            }
+
+            if (Id.Equals("4"))
+            {
+                return Color.yellow;
+            }
+
+            return Color.black;
+
+        }
     }
 }
