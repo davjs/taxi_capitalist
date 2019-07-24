@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Taxi;
 using UnityEngine;
@@ -7,7 +8,8 @@ public class TaxiSpawner : MonoBehaviour
 {
     public GameObject Taxi;
 
-    // Start is called before the first frame update
+    public String[] Colors = new[] {"Red", "Cyan", "Yellow", "Purple"};
+
     public void Awake()
     {
         var spawnPoints = GetTaxiSpawnPoints();
@@ -20,8 +22,18 @@ public class TaxiSpawner : MonoBehaviour
             var playerId = nextPlayerId.ToString();
             var taxiPlayer = taxi.GetComponent<Player>();
             taxiPlayer.Id = playerId;
-            taxi.GetComponentInChildren<MeshRenderer>().material
-                .SetColor("_BaseColor", taxiPlayer.GetColor());
+            var colorNameToUse = taxiPlayer.GetColorName();
+            foreach (var color in Colors)
+            {
+                if (color != colorNameToUse)
+                {
+                    var taxiColoredMesh = taxi.transform.Find(color + "Taxi");
+                    taxiColoredMesh.gameObject.SetActive(false);
+                }
+            }
+
+//            taxi.GetComponentInChildren<MeshRenderer>().material
+//                .SetColor("_BaseColor", taxiPlayer.GetColor());
             nextPlayerId += 1;
         }
     }
