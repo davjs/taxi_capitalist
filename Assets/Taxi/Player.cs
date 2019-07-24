@@ -7,6 +7,14 @@ namespace Taxi
         public int Money = 0;
         public int Stocks = 0;
         public string Id = "Red";
+        public float collisionForce = 50;
+
+        private Rigidbody rb;
+
+        private void Start()
+        {
+            rb = GetComponent<Rigidbody>();
+        }
 
         public void EarnMoney(int money)
         {
@@ -46,6 +54,14 @@ namespace Taxi
         public void SpendMoney(int amount)
         {
             Money -= amount;
+        }
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (collision.gameObject.tag == "Player")
+            {
+                rb.AddExplosionForce(collisionForce, collision.GetContact(0).point, 2f);
+            }
         }
     }
 }

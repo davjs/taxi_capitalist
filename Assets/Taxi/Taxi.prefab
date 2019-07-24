@@ -110,6 +110,7 @@ MonoBehaviour:
   Money: 100
   Stocks: 0
   Id: 1
+  collisionForce: 500
 --- !u!114 &8179631263199956292
 MonoBehaviour:
   m_ObjectHideFlags: 0
