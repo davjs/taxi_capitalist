@@ -2728,7 +2728,7 @@ GameObject:
   - component: {fileID: 5340060115685883325}
   - component: {fileID: 1108167736049671650}
   m_Layer: 0
-  m_Name: wating_model
+  m_Name: wating_chr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2764,7 +2764,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8953417438257926062}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 9c82ac74d9c135342bbc24bcc0ecbcfa, type: 3}
   m_Controller: {fileID: 9100000, guid: 002fe405c76c6fc4a8fc81bcbf9ce50f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
