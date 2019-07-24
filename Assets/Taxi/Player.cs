@@ -6,7 +6,7 @@ namespace Taxi
     {
         public int Money = 0;
         public int Stocks = 0;
-        public string Id = "Red";
+        public string Id = "1";
         public float collisionForce = 50;
 
         private Rigidbody rb;
@@ -30,12 +30,12 @@ namespace Taxi
 
             if (Id.Equals("2"))
             {
-                return Color.blue;
+                return Color.cyan;
             }
 
             if (Id.Equals("3"))
             {
-                return Color.green;
+                return Color.magenta;
             }
 
             if (Id.Equals("4"))
@@ -62,6 +62,31 @@ namespace Taxi
             {
                 rb.AddExplosionForce(collisionForce, collision.GetContact(0).point, 2f);
             }
+        }
+
+        public string GetColorName()
+        {
+            if (Id.Equals("1"))
+            {
+                return "Red";
+            }
+
+            if (Id.Equals("2"))
+            {
+                return "Cyan";
+            }
+
+            if (Id.Equals("3"))
+            {
+                return "Purple";
+            }
+
+            if (Id.Equals("4"))
+            {
+                return "Yellow";
+            }
+
+            return "Black";
         }
     }
 }
