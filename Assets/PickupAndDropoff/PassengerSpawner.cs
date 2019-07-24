@@ -58,8 +58,8 @@ namespace PickupAndDropoff
 
         public void RegisterDropoffAtPointByPlayer(Vector3 originalSpawnPoint)
         {
-            FreeSpawns.Add(originalSpawnPoint);
             SpawnPassengers();
+            FreeSpawns.Add(originalSpawnPoint);
         }
 
         private Vector3 GetDropoffLocation()
