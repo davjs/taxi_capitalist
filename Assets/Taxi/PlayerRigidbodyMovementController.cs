@@ -18,7 +18,7 @@ namespace Taxi {
 
         void Update() {
             rigidbody.useGravity = transform.position.y > 0.6f;
-            if (rigidbody.velocity.magnitude > 45) {
+            if (rigidbody.velocity.magnitude > 50) {
                 speedyParticles.Emit(200);
             }
             switch (movementType) {
