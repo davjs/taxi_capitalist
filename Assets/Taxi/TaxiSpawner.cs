@@ -17,7 +17,11 @@ public class TaxiSpawner : MonoBehaviour
         {
             var taxi = Instantiate(Taxi, spawnPoint, Quaternion.identity);
 
-            taxi.GetComponent<Player>().Id = nextPlayerId.ToString();
+            var playerId = nextPlayerId.ToString();
+            var taxiPlayer = taxi.GetComponent<Player>();
+            taxiPlayer.Id = playerId;
+            taxi.GetComponentInChildren<MeshRenderer>().material
+                .SetColor("_BaseColor", taxiPlayer.GetColor());
             nextPlayerId += 1;
         }
     }

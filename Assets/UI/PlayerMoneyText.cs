@@ -12,10 +12,12 @@ namespace UI
         private Player _player;
         private Text _text;
 
-        void Awake()
-        {
-            _text = GetComponent<Text>();
+        void Start()
+        {    
             _player = FindPlayerWithId(PlayerId);
+            
+            _text = GetComponent<Text>();
+            _text.color = _player.GetColor();
         }
 
         void Update()
