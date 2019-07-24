@@ -278,10 +278,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4592278875842227339, guid: 02a26915c876b3e4a80347027cfb9a3a,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
+    - target: {fileID: 1742703188, guid: 02a26915c876b3e4a80347027cfb9a3a, type: 3}
+      propertyPath: SpeedIncrease
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02a26915c876b3e4a80347027cfb9a3a, type: 3}
@@ -737,23 +736,3 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!1 &1742703186 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5095827997962517474, guid: 02a26915c876b3e4a80347027cfb9a3a,
-    type: 3}
-  m_PrefabInstance: {fileID: 864923345}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1742703188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742703186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: daa7bcaa8f417f3418603d69da6dcd80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Cost: 50
-  SpeedIncrease: 500
