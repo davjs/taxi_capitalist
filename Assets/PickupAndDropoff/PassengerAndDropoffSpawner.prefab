@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7201416092523924722
+--- !u!1 &7292098511492299
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,42 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4681312129908574979}
-  - component: {fileID: 4536302570971265047}
+  - component: {fileID: 7292098511492297}
+  - component: {fileID: 7292098511492296}
   m_Layer: 0
-  m_Name: RoadSpawner
+  m_Name: PassengerAndDropoffSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4681312129908574979
+--- !u!4 &7292098511492297
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7201416092523924722}
+  m_GameObject: {fileID: 7292098511492299}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1261177, y: 0.38021374, z: -0.12611818}
+  m_LocalPosition: {x: 510, y: 458, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4536302570971265047
+--- !u!114 &7292098511492296
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7201416092523924722}
+  m_GameObject: {fileID: 7292098511492299}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a7f99d34edd422fbc803be8dc7257ee, type: 3}
+  m_Script: {fileID: 11500000, guid: 90e9243e032d49ad92b59c0fbc6d5efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickupPrefab: {fileID: 6470180597958928057, guid: b707b8eb2c969084288beacca9f602e9,
+  Passenger: {fileID: 6470180597958928057, guid: b707b8eb2c969084288beacca9f602e9,
     type: 3}
-  DropoffPrefab: {fileID: 8625342285020210799, guid: 1015fa6ff067c514da6eb9c5eefdbcca,
-    type: 3}
+  Dropoff: {fileID: 8625342285020210799, guid: 1015fa6ff067c514da6eb9c5eefdbcca, type: 3}
