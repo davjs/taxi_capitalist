@@ -21,7 +21,7 @@ namespace PickupAndDropoff
             var points = GameObject.FindGameObjectsWithTag("Spawn");
             FreeSpawns = points.Select(point => point.transform.position).ToList();
             _maxPassengers = FreeSpawns.Count / 2;
-            
+
             SpawnPassengers();
         }
 
@@ -50,6 +50,7 @@ namespace PickupAndDropoff
             dropoff.OriginalSpawnPoint = dropoffLocation;
             dropoff.Spawner = this;
             dropoff.Player = player;
+            dropoff.GetComponentInChildren<MeshRenderer>().material.SetColor("_BaseColor", player.GetColor());
 
             FreeSpawns.Add(originalSpawnPoint);
             _passengersOut -= 1;

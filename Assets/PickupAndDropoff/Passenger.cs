@@ -11,15 +11,16 @@ namespace PickupAndDropoff
         private void OnCollisionEnter(Collision other)
         {
             var otherPlayer = other.gameObject.GetComponent<Player>();
-            if (otherPlayer)
-            {
-                Spawner.RegisterPassengerPickedUpAtPointByPlayer(OriginalSpawnPoint, otherPlayer);
+            if (!otherPlayer) return;
 
-                var personHolder = otherPlayer.GetComponent<TaxiPersonHolder>();
-                personHolder.LoadPersons();
+            var personHolder = otherPlayer.GetComponent<TaxiPersonHolder>();
+            if (!personHolder.CanFitMore()) return;
 
-                Destroy(gameObject);
-            }
+            Spawner.RegisterPassengerPickedUpAtPointByPlayer(OriginalSpawnPoint, otherPlayer);
+
+            personHolder.LoadPersons();
+
+            Destroy(gameObject);
         }
     }
 }

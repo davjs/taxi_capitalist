@@ -11,9 +11,9 @@ public class Dropoff : MonoBehaviour
     public Vector3 OriginalSpawnPoint;
     public PassengerSpawner Spawner;
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
-        var otherPlayer = other.gameObject.GetComponent<Player>();
+        var otherPlayer = other.gameObject.GetComponentInParent<Player>();
         if (otherPlayer && Player.Id.Equals(otherPlayer.Id))
         {
             Spawner.RegisterDropoffAtPointByPlayer(OriginalSpawnPoint);
