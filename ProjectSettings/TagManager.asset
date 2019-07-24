@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Spawn
   - TaxiSpawn
+  - Market
   layers:
   - Default
   - TransparentFX

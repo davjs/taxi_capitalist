@@ -1,11 +1,11 @@
-﻿using System.Data.SqlTypes;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Taxi
 {
     public class Player : MonoBehaviour
     {
-        public int Money = 100;
+        public int Money = 0;
+        public int Stocks = 0;
         public string Id = "Red";
 
         public void EarnMoney(int money)
@@ -36,7 +36,16 @@ namespace Taxi
             }
 
             return Color.black;
+        }
 
+        public void AddStock(int stocks)
+        {
+            Stocks += stocks;
+        }
+
+        public void SpendMoney(int amount)
+        {
+            Money -= amount;
         }
     }
 }
