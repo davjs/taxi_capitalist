@@ -469,9 +469,6 @@ GameObject:
   - component: {fileID: 8228563291329295581}
   - component: {fileID: 8228563291329295582}
   - component: {fileID: 8228563291329295583}
-  - component: {fileID: 8228563291329295577}
-  - component: {fileID: 8228563291329295578}
-  - component: {fileID: 8228563291329295576}
   - component: {fileID: 1003599513}
   m_Layer: 0
   m_Name: Taxiboi
@@ -544,49 +541,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &8228563291329295577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8228563291329295572}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 707f590177e3ed0429575554ea29b7cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  horizontal: 0
-  vertical: 0
-  gizmoSize: 4
---- !u!114 &8228563291329295578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8228563291329295572}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 764d8c8f4924b7641a5935ce06c74673, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocity: 1000
-  rotationSpeed: 1000
-  movementType: 0
---- !u!65 &8228563291329295576
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8228563291329295572}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.99999994, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &1003599513
 CapsuleCollider:
   m_ObjectHideFlags: 0
