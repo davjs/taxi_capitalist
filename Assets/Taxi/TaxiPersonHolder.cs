@@ -1,8 +1,20 @@
 using UnityEngine;
 
-internal class TaxiPersonHolder : MonoBehaviour
+namespace Taxi
 {
-    public void loadPersons()
+    public class TaxiPersonHolder : MonoBehaviour
     {
+        private const int Price = 100;
+        private const int Capacity = 1;
+
+        public void LoadPersons()
+        {
+        }
+
+        public void UnloadPersons()
+        {
+            var player = GetComponent<Player>();
+            player.EarnMoney(Capacity * Price);
+        }
     }
 }
