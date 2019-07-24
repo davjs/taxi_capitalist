@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 guid: 9c82ac74d9c135342bbc24bcc0ecbcfa
 =======
@@ -21,6 +22,15 @@ ModelImporter:
 =======
     importMaterials: 1
 >>>>>>> 76ca502f74f2a55eb2bb0f4b05b792c265db34aa
+=======
+guid: 9c9e4c053f48177418aab6f828d87d93
+ModelImporter:
+  serializedVersion: 25
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+>>>>>>> Stashed changes
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -58,6 +68,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       loopTime: 1
       loopBlend: 1
@@ -65,6 +76,10 @@ ModelImporter:
       loopTime: 0
       loopBlend: 0
 >>>>>>> 76ca502f74f2a55eb2bb0f4b05b792c265db34aa
+=======
+      loopTime: 0
+      loopBlend: 0
+>>>>>>> Stashed changes
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
