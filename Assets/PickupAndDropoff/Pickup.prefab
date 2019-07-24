@@ -192,8 +192,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6470180597958928059}
-  - component: {fileID: 6470180597958928056}
   - component: {fileID: 6470180597958928058}
+  - component: {fileID: 857217602508169370}
   m_Layer: 0
   m_Name: Pickup
   m_TagString: Untagged
@@ -217,19 +217,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6470180597958928056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6470180597958928057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ca517f9088723e46bdfcc45b7bf67fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RoadSpawner: {fileID: 0}
 --- !u!135 &6470180597958928058
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -243,3 +230,17 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &857217602508169370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6470180597958928057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d634b25ad994bd9ba098979f29c9d89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OriginalSpawnPoint: {x: 0, y: 0, z: 0}
+  Spawner: {fileID: 0}
