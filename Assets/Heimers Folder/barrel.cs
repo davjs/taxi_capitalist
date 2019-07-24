@@ -5,6 +5,8 @@ using UnityEngine;
 public class barrel : MonoBehaviour
 {
     private Rigidbody rb;
+    [SerializeField] private float explosiveForce = 100.0f;
+
 
     void Start()
     {
@@ -16,7 +18,7 @@ public class barrel : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             rb.useGravity = true;
-            rb.AddExplosionForce(100.0f, transform.position, 1.0f);
+            rb.AddExplosionForce(explosiveForce, transform.position, 1.0f);
         }
 
     }
