@@ -627,7 +627,7 @@ GameObject:
   - component: {fileID: 6683967230355296640}
   - component: {fileID: 3623210813444685050}
   m_Layer: 0
-  m_Name: hus_1_small (2)
+  m_Name: hus_1_small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
