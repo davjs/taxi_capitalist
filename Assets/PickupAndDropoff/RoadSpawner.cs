@@ -24,13 +24,17 @@ public class RoadSpawner : MonoBehaviour
     {
         var point = _spawnPoints[Random.Range(0, _spawnPoints.Count)];
         var dropoffObject = Instantiate(DropoffPrefab, point, Quaternion.identity);
-        dropoffObject.GetComponent<Dropoff>().RoadSpawner = this;
+
+        var dropoff = dropoffObject.GetComponent<Dropoff>();
+        dropoff.RoadSpawner = this;
     }
 
     public void SpawnPickupPoint()
     {
         var point = _spawnPoints[Random.Range(0, _spawnPoints.Count)];
         var pickupObject = Instantiate(PickupPrefab, point, Quaternion.identity);
-        pickupObject.GetComponent<PickupablePerson>().RoadSpawner = this;
+
+        var pickupablePerson = pickupObject.GetComponent<PickupablePerson>();
+        pickupablePerson.RoadSpawner = this;
     }
 }

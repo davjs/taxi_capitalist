@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Taxi;
 using UnityEngine;
 
 public class Dropoff : MonoBehaviour
@@ -11,7 +12,7 @@ public class Dropoff : MonoBehaviour
         var personHolder = other.gameObject.GetComponent<TaxiPersonHolder>();
         if (personHolder)
         {
-            personHolder.loadPersons();
+            personHolder.UnloadPersons();
             RoadSpawner.SpawnPickupPoint();
             Destroy(gameObject);
         }
