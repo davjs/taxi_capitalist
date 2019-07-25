@@ -23,7 +23,9 @@ public class Walker : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.GetComponent<Player>())
+        var player = other.gameObject.GetComponent<Player>();
+
+        if (player)
         {
             _body.isKinematic = false;
             GetComponent<Animator>().enabled = false;
@@ -32,6 +34,8 @@ public class Walker : MonoBehaviour
             rigidbody.AddForce(((Vector3.up) + (rigidbody.velocity * .75f)) * .0006f, ForceMode.Impulse);
 
             AudioManager.instance.Play("UGH");
+
+            player.EarnMoney(1);
 
             Destroy(gameObject, 5);
         }
