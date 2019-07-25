@@ -7,7 +7,7 @@ using UnityEngine;
 public class StockBar : MonoBehaviour {
     public int PlayerIndex;
     public float MaxHeight = 5.0f;
-    public float StocksGoal = 20;
+    public float StocksGoal = 100;
 
     private Player _player;
 
@@ -21,7 +21,7 @@ public class StockBar : MonoBehaviour {
 
     private void Update() {
         var height = (_player.Stocks / StocksGoal) * MaxHeight;
-        transform.localScale = new Vector3(1, 1, height);
+        transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, height);
     }
 
 }
