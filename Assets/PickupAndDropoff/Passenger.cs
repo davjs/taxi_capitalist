@@ -38,14 +38,16 @@ namespace PickupAndDropoff
                 _body.AddForce(((Vector3.up * 2) + (Vector3.forward * Random.value * .75f)) * .0012f,
                     ForceMode.Impulse);
 
-                return;
+                Spawner.RegisterPassengerDied(OriginalSpawnPoint);
             }
+            else
+            {
+                Spawner.RegisterPassengerPickedUpAtPointByPlayer(OriginalSpawnPoint, otherPlayer);
 
-            Spawner.RegisterPassengerPickedUpAtPointByPlayer(OriginalSpawnPoint, otherPlayer);
+                personHolder.LoadPersons();
 
-            personHolder.LoadPersons();
-
-            DestroySelf();
+                DestroySelf();
+            }
         }
 
         private void DestroySelf()

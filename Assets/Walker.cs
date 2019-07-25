@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Taxi;
+﻿using Taxi;
 using UnityEngine;
 
 public class Walker : MonoBehaviour
@@ -19,7 +17,7 @@ public class Walker : MonoBehaviour
     {
         if (_body.isKinematic)
         {
-            transform.position += -transform.right * 1.5f * Time.deltaTime;
+            transform.position += -transform.right * 1.2f * Time.deltaTime;
         }
     }
 

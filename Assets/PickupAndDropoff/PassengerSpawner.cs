@@ -71,5 +71,11 @@ namespace PickupAndDropoff
 
             return spawnPoint;
         }
+
+        public void RegisterPassengerDied(Vector3 originalSpawnPoint)
+        {
+            FreeSpawns.Add(originalSpawnPoint);
+            _passengersOut -= 1;
+        }
     }
 }
