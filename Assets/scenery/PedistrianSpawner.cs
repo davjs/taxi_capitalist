@@ -22,10 +22,9 @@ namespace scenery
             }
         }
 
-
         private IEnumerator SpawnPedestriansAtPoint(Transform spawn)
         {
-            yield return new WaitForSeconds(Random.Range(10, 30));
+            yield return new WaitForSeconds(Random.Range(5, 40));
 
             while (true)
             {
@@ -33,7 +32,7 @@ namespace scenery
                 var pedestrian = Instantiate(randomPrefab, spawn.position, spawn.rotation);
                 Destroy(pedestrian, 20);
 
-                yield return new WaitForSeconds(Random.Range(10, 30));
+                yield return new WaitForSeconds(Random.Range(20, 40));
             }
         }
     }

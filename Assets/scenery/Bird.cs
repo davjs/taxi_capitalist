@@ -21,7 +21,7 @@ namespace scenery
 
         public void Update()
         {
-            transform.position += transform.forward * Time.deltaTime * 5f;
+            transform.position += transform.forward * Time.deltaTime * 7f;
             transform.Rotate(0, Random.Range(0, 2) * Time.deltaTime, 0);
         }
 
