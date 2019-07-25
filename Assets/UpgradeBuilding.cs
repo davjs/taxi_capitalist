@@ -13,7 +13,7 @@ public enum Upgrade
 
 public class UpgradeBuilding : MonoBehaviour
 {
-    [NonSerialized] public int Cost = 400;
+    [NonSerialized] public int Cost = 200;
     [NonSerialized] public float SpeedIncrease = 500f;
     public Upgrade? CurrentUpgrade = Upgrade.Speed;
     public GameObject SizeIcon;
