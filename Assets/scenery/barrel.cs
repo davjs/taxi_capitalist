@@ -41,6 +41,8 @@ public class barrel : MonoBehaviour
             lidRb.useGravity = true;
             lidRb.AddExplosionForce(explosiveForce / 2, lid.transform.position, 1.0f);
 
+            AudioManager.instance.Play("GarbageImpact");
+
             StartCoroutine(ResetAfterTime(resetTimerLength));
         }
     }

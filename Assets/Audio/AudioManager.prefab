@@ -312,7 +312,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8451345951391443877}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -362,7 +362,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: UGH
     clip: {fileID: 8300000, guid: 4297d68dca19c694788f328e6fc71acc, type: 3}
-    volume: 1
+    volume: 0.8
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
@@ -370,6 +370,19 @@ MonoBehaviour:
     sound3d: 0
     playOnAwake: 0
     loop: 0
-    mixerGroup: {fileID: -8682596243767707899, guid: 52d6d8e201960c647913241145687546,
+    mixerGroup: {fileID: -1427435087794466269, guid: 52d6d8e201960c647913241145687546,
+      type: 2}
+    source: {fileID: 0}
+  - name: GarbageImpact
+    clip: {fileID: 8300000, guid: 0eae5d866db45bd4484dffae0e973bcf, type: 3}
+    volume: 0.4
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    spatialBlend: 0
+    sound3d: 0
+    playOnAwake: 0
+    loop: 0
+    mixerGroup: {fileID: -1427435087794466269, guid: 52d6d8e201960c647913241145687546,
       type: 2}
     source: {fileID: 0}
