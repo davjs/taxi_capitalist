@@ -61,6 +61,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OriginalSpawnPoint: {x: 0, y: 0, z: 0}
   Spawner: {fileID: 0}
+  Light: {fileID: 5955703226228012769}
 --- !u!1 &7996260184176995623
 GameObject:
   m_ObjectHideFlags: 0
