@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 7255406134954779804}
   - component: {fileID: 7255406134954779810}
   - component: {fileID: 7255406134954779805}
-  - component: {fileID: 7255406134954779806}
   m_Layer: 0
   m_Name: Lid
   m_TagString: Untagged
@@ -141,19 +140,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8, y: 2.0000002, z: 0.8}
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &7255406134954779806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7255406134954779808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61854a95b0cd97b45a3b47f0b86df97e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosiveForce: 50
 --- !u!1001 &7255406135056191618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -236,6 +222,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.64359
       objectReference: {fileID: 0}
+    - target: {fileID: -7134340095232287808, guid: 3b8a210eedf7feb48b769746cf49eb00,
+        type: 3}
+      propertyPath: lid
+      value: 
+      objectReference: {fileID: 7255406134954779808}
     - target: {fileID: 1906715793770680184, guid: 3b8a210eedf7feb48b769746cf49eb00,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

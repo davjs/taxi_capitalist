@@ -10,13 +10,16 @@ namespace Taxi
         public float rotationSpeed = 180;
         public ParticleSystem speedyParticles;
         public PlayerMovementType movementType;
-
+        
+        private Player _player;
         private PlayerInputController inputController;
         private new Rigidbody rigidbody;
+
 
         private void Start()
         {
             inputController = GetComponent<PlayerInputController>();
+           _player = GetComponent<Player>();
             rigidbody = GetComponent<Rigidbody>();
         }
 
@@ -50,11 +53,11 @@ namespace Taxi
         {
             this.rigidbody.AddForce(inputController.horizontal * Vector3.right * velocity * Time.deltaTime);
             this.rigidbody.AddForce(inputController.vertical * Vector3.forward * velocity * Time.deltaTime);
-
-            if (this.rigidbody.velocity.magnitude >= 30)
+            var maxSpeed = _player.SpeedUpgrade ? 60 : 30;
+            if (this.rigidbody.velocity.magnitude >= maxSpeed)
             {
-                rigidbody.velocity = new Vector3(Math.Min(rigidbody.velocity.x, 30), rigidbody.velocity.y,
-                    Math.Min(rigidbody.velocity.z, 30));
+                rigidbody.velocity = new Vector3(Math.Min(rigidbody.velocity.x, maxSpeed), rigidbody.velocity.y,
+                    Math.Min(rigidbody.velocity.z, maxSpeed));
             }
         }
 

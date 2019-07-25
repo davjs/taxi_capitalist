@@ -7,7 +7,7 @@ namespace Taxi
         private int _loadedPassengers;
 
         private const int Price = 100;
-        private const int Capacity = 1;
+        public int Capacity = 1;
 
         public void LoadPersons()
         {
@@ -20,6 +20,13 @@ namespace Taxi
 
             var player = GetComponent<Player>();
             player.EarnMoney(Capacity * Price);
+
+            var allPlayers = GameObject.FindGameObjectsWithTag("Player");
+
+            foreach (var obj in allPlayers)
+            {
+                obj.GetComponent<Player>().EarnInterest(Capacity * Price);
+            }
         }
 
         public bool CanFitMore()
