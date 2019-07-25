@@ -6,7 +6,7 @@ namespace Market
 {
     public class Market : MonoBehaviour
     {
-        [NonSerialized] public int StockPrice = 0;
+        [NonSerialized] public int StockPrice = 100;
 
         [NonSerialized] public int StockQt = 10;
 
