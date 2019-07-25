@@ -20,6 +20,7 @@ namespace Taxi
         public void EarnMoney(int money)
         {
             Money += money;
+            TextMeshManager.InstantiateText(transform.position, "+" + money + "$", Id);
         }
 
         public Color GetColor()
@@ -90,9 +91,9 @@ namespace Taxi
             return "Black";
         }
 
-        public void EarnInterest(int value)
+        public int CalculateInterest(int value)
         {
-            EarnMoney((int)((Stocks / 100.0f) * value));
+            return (int)((Stocks / 100.0f) * value);
         }
     }
 }
