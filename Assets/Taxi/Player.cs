@@ -6,6 +6,7 @@ namespace Taxi
     {
         public int Money = 0;
         public int Stocks = 0;
+        public bool SpeedUpgrade = false;
         public string Id = "1";
         public float collisionForce = 50;
 
