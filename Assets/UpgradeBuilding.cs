@@ -10,9 +10,10 @@ public class UpgradeBuilding : MonoBehaviour {
     private void OnTriggerEnter(Collider other) {
         var player = other.gameObject.GetComponentInParent<Player>();
         var taxiController = other.gameObject.GetComponentInParent<PlayerRigidbodyMovementController>();
-        if (taxiController && player.Money >= Cost) {
+        if (taxiController && player.Money >= Cost && !player.SpeedUpgrade) {
             taxiController.velocity += SpeedIncrease;
             player.Money -= Cost;
+            player.SpeedUpgrade = true;
         }
     }
 }

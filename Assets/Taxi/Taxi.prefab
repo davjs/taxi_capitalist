@@ -449,7 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764d8c8f4924b7641a5935ce06c74673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 1800
+  velocity: 1500
   rotationSpeed: 1000
   speedyParticles: {fileID: 1246424041}
   movementType: 0
@@ -495,6 +495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Money: 100
   Stocks: 0
+  SpeedUpgrade: 0
   Id: 1
   collisionForce: 500
 --- !u!114 &8179631263199956292
