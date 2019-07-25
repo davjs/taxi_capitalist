@@ -1031,7 +1031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 764d8c8f4924b7641a5935ce06c74673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 1500
+  velocity: 1100
   rotationSpeed: 1000
   speedyParticles: {fileID: 1246424041}
   movementType: 0
@@ -6236,15 +6236,20 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2569148070721742601, guid: 8e777863a900e0a45a1c445a2d85eb59,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7852932705088886178, guid: 8e777863a900e0a45a1c445a2d85eb59,
         type: 3}
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2569148070721742601, guid: 8e777863a900e0a45a1c445a2d85eb59,
+    - target: {fileID: 6041296696494459336, guid: 8e777863a900e0a45a1c445a2d85eb59,
         type: 3}
-      propertyPath: m_CastShadows
-      value: 0
+      propertyPath: m_RootOrder
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e777863a900e0a45a1c445a2d85eb59, type: 3}
@@ -6341,12 +6346,12 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5440546299929013064, guid: 9d18e34c95271fa459b1886c6e153a13,
+    - target: {fileID: 350434380758686179, guid: 9d18e34c95271fa459b1886c6e153a13,
         type: 3}
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 350434380758686179, guid: 9d18e34c95271fa459b1886c6e153a13,
+    - target: {fileID: 5440546299929013064, guid: 9d18e34c95271fa459b1886c6e153a13,
         type: 3}
       propertyPath: m_CastShadows
       value: 0

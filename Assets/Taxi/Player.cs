@@ -27,17 +27,17 @@ namespace Taxi
         {
             if (Id.Equals("1"))
             {
-                return Color.red;
+                return  new Color(1, 86 / 255f, 86 / 255f);
             }
 
             if (Id.Equals("2"))
             {
-                return Color.cyan;
+                return new Color(86 / 255f, 1, 1);
             }
 
             if (Id.Equals("3"))
             {
-                return Color.magenta;
+                return new Color(1, 86 / 255f, 1);
             }
 
             if (Id.Equals("4"))
