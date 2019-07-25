@@ -53,12 +53,12 @@ namespace Taxi {
                 var player2Speed = collision.rigidbody.velocity.magnitude;
                 var player2 = collision.gameObject.GetComponent<Player>();
                 if (player1Speed > player2Speed) {
-                    var transaction = Mathf.Round(0.01f * player2.Money);
+                    var transaction = Mathf.Round(0.1f * player2.Money);
                     EarnMoney((int) transaction);
                     player2.EarnMoney((int) -transaction);
                 }
                 else {
-                    var transaction = Mathf.Round(0.01f * Money);
+                    var transaction = Mathf.Round(0.1f * Money);
                     EarnMoney((int) transaction);
                     player2.EarnMoney((int) transaction);
                 }
