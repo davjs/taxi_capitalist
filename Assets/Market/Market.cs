@@ -23,7 +23,7 @@ namespace Market
 
             player.SpendMoney(StockPrice);
 
-            StockPrice = (int) Math.Max(StockPrice + 10, Math.Round((StockPrice * 1.125) / 10) * 10);
+            StockPrice = (int) Math.Max(StockPrice + 10, Math.Round((StockPrice * 1.15) / 10) * 10);
 
             AudioManager.instance.Play("PurchaseStock");
         }
