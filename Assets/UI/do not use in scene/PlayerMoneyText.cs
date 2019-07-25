@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using Taxi;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,13 +11,13 @@ namespace UI
         public string PlayerId;
 
         private Player _player;
-        private Text _text;
+        private TextMeshProUGUI _text;
 
         void Start()
         {    
             _player = FindPlayerWithId(PlayerId);
             
-            _text = GetComponent<Text>();
+            _text = GetComponent<TextMeshProUGUI>();
             _text.color = _player.GetColor();
         }
 
