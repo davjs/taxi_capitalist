@@ -386,3 +386,16 @@ MonoBehaviour:
     mixerGroup: {fileID: -1427435087794466269, guid: 52d6d8e201960c647913241145687546,
       type: 2}
     source: {fileID: 0}
+  - name: Upgrade
+    clip: {fileID: 8300000, guid: cdfba8aba7f64ba43b2a8c88bb2af645, type: 3}
+    volume: 0.6
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    spatialBlend: 0
+    sound3d: 0
+    playOnAwake: 0
+    loop: 0
+    mixerGroup: {fileID: -1427435087794466269, guid: 52d6d8e201960c647913241145687546,
+      type: 2}
+    source: {fileID: 0}
