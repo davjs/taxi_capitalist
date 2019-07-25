@@ -7,6 +7,8 @@ namespace Taxi
     {
         private int _loadedPassengers;
 
+        [SerializeField] private AudioClip stockPurchase;
+
         private const int Price = 100;
         public int Capacity = 1;
 
@@ -31,6 +33,7 @@ namespace Taxi
             {
                 obj.EarnMoney(obj.CalculateInterest(sumMoney));
             }
+            AudioManager.instance.Play("Dropoff");
         }
 
         public bool CanFitMore()

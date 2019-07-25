@@ -25,6 +25,8 @@ namespace Market
 
             //StockQt = (int) Math.Max(StockQt + 1, Math.Round(StockQt * 1.1));
             StockPrice = (int) Math.Round((StockPrice * 1.2) / 10) * 10;
+
+            AudioManager.instance.Play("PurchaseStock");
         }
 
         public bool GameHasEnded()
