@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Taxi;
+﻿using Taxi;
 using UnityEngine;
 
 public class Walker : MonoBehaviour
@@ -19,7 +17,7 @@ public class Walker : MonoBehaviour
     {
         if (_body.isKinematic)
         {
-            transform.position += -transform.right * 1.5f * Time.deltaTime;
+            transform.position += -transform.right * 1.2f * Time.deltaTime;
         }
     }
 
@@ -32,6 +30,8 @@ public class Walker : MonoBehaviour
 
             var rigidbody = GetComponent<Rigidbody>();
             rigidbody.AddForce(((Vector3.up) + (rigidbody.velocity * .75f)) * .0006f, ForceMode.Impulse);
+
+            Destroy(gameObject, 5);
         }
     }
 }

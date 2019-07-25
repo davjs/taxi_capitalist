@@ -25,12 +25,17 @@ public class barrel : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         lidRb = lid.GetComponent<Rigidbody>();
 
+        rb.isKinematic = true;
+        lidRb.isKinematic = true;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
+            rb.isKinematic = false;
+            lidRb.isKinematic = false;
+
             rb.useGravity = true;
             rb.AddExplosionForce(explosiveForce, transform.position, 1.0f);
             lidRb.useGravity = true;
