@@ -52,6 +52,8 @@ public class UpgradeBuilding : MonoBehaviour
 
             ClearUpgrade();
         }
+
+        AudioManager.instance.Play("Upgrade");
     }
 
     private void ClearUpgrade()
