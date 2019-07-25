@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &533818542
 RectTransform:
   m_ObjectHideFlags: 0
@@ -482,6 +482,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Cost: 50
   SpeedIncrease: 1000
+  SizeIcon: {fileID: 6914411497858006744}
+  SpeedIcon: {fileID: 533818541}
+  PriceTag: {fileID: 9194328602577789492}
 --- !u!1 &6818314881822626604
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,7 +587,7 @@ GameObject:
   - component: {fileID: 4447000460916489529}
   - component: {fileID: 6630544603438517577}
   m_Layer: 0
-  m_Name: SpeedSprite
+  m_Name: SizeSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -646,7 +649,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 97ca1c969f7f45a4d8354318c3aa6a1f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1f0924dff765fa048ba3e9e6cb0b1387, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

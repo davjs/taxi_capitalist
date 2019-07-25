@@ -690,6 +690,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1596270998167910516}
   - component: {fileID: 8695636977121940750}
+  - component: {fileID: 951976735204161970}
   m_Layer: 0
   m_Name: Littlegirl_Walk_anim
   m_TagString: Untagged
@@ -706,7 +707,7 @@ Transform:
   m_GameObject: {fileID: 2340818315659217511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.70991, y: 0.70991, z: 0.70991}
+  m_LocalScale: {x: 42.59496, y: 42.5946, z: 42.5946}
   m_Children:
   - {fileID: 1325693599189752270}
   - {fileID: 3814133967826588165}
@@ -724,7 +725,7 @@ Animator:
   m_GameObject: {fileID: 2340818315659217511}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 8ccd8e79480c8004fbb0c3a1e7ee0283, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a1cdbb002762a494cbf9a797e6f533c1, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -733,6 +734,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &951976735204161970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2340818315659217511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851f60f96b211ca41956ab90a4acd3b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2397688961942860421
 GameObject:
   m_ObjectHideFlags: 0

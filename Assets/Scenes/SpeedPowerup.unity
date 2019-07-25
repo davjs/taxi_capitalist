@@ -218,11 +218,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4930701910837490349, guid: 02a26915c876b3e4a80347027cfb9a3a,
-        type: 3}
-      propertyPath: m_Name
-      value: BuyingHouse_
-      objectReference: {fileID: 0}
     - target: {fileID: 1994737648774240618, guid: 02a26915c876b3e4a80347027cfb9a3a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -277,6 +272,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4930701910837490349, guid: 02a26915c876b3e4a80347027cfb9a3a,
+        type: 3}
+      propertyPath: m_Name
+      value: BuyingHouse_
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02a26915c876b3e4a80347027cfb9a3a, type: 3}

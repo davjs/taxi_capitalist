@@ -34,7 +34,7 @@ namespace PickupAndDropoff
                 var spawnPoint = FreeSpawns[randomIndex];
                 FreeSpawns.RemoveAt(randomIndex);
 
-                var passengerGameObject = Instantiate(Passenger, spawnPoint, Random.rotation);
+                var passengerGameObject = Instantiate(Passenger, spawnPoint, Quaternion.Euler(0, Random.value * 360, 0));
                 var passenger = passengerGameObject.GetComponent<Passenger>();
                 passenger.OriginalSpawnPoint = spawnPoint;
                 passenger.Spawner = this;

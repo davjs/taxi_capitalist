@@ -445,6 +445,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3238834014937036703}
   - component: {fileID: 3465714868295980670}
+  - component: {fileID: 1777412785792160052}
+  - component: {fileID: 4308609098854589682}
+  - component: {fileID: 406282746025749514}
   m_Layer: 0
   m_Name: Dronk_Walk_Chr
   m_TagString: Untagged
@@ -461,7 +464,7 @@ Transform:
   m_GameObject: {fileID: 1921347884160173452}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 60, y: 60, z: 60}
   m_Children:
   - {fileID: 2931967801637639717}
   - {fileID: 1025475742404074990}
@@ -488,6 +491,47 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1777412785792160052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921347884160173452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851f60f96b211ca41956ab90a4acd3b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &4308609098854589682
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921347884160173452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030000016, y: 0.05000004, z: 0.02575514}
+  m_Center: {x: 0, y: 0.02500002, z: -0.0026580058}
+--- !u!54 &406282746025749514
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921347884160173452}
+  serializedVersion: 2
+  m_Mass: 0.0001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1987199092856651118
 GameObject:
   m_ObjectHideFlags: 0

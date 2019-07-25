@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 namespace Taxi
@@ -7,7 +8,7 @@ namespace Taxi
         private int _loadedPassengers;
 
         private const int Price = 100;
-        private const int Capacity = 1;
+        public int Capacity = 1;
 
         public void LoadPersons()
         {
@@ -19,7 +20,17 @@ namespace Taxi
             _loadedPassengers -= 1;
 
             var player = GetComponent<Player>();
-            player.EarnMoney(Capacity * Price);
+            var sumMoney = Capacity * Price;
+            player.EarnMoney(sumMoney + player.CalculateInterest(sumMoney));
+
+            var allPlayers = GameObject.FindGameObjectsWithTag("Player")
+                .Select(x => x.GetComponent<Player>())
+                .Where(x => x.Id != player.Id);
+
+            foreach (var obj in allPlayers)
+            {
+                obj.EarnMoney(obj.CalculateInterest(sumMoney));
+            }
         }
 
         public bool CanFitMore()
