@@ -28,7 +28,7 @@ namespace Taxi
 
             var player = GetComponent<Player>();
             var sumMoney = Price;
-            player.EarnMoney(sumMoney + player.CalculateInterest(sumMoney));
+            player.EarnMoney(sumMoney);
 
             var allPlayers = GameObject.FindGameObjectsWithTag("Player")
                 .Select(x => x.GetComponent<Player>())
