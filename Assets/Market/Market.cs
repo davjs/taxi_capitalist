@@ -14,8 +14,8 @@ namespace Market
             player.AddStock(StockQt);
             player.SpendMoney(StockPrice);
 
-            StockQt = (int) Math.Max(StockQt + 1, Math.Round(StockQt * 1.2));
-            StockPrice = (int) Math.Round((StockPrice * 1.5) / 10) * 10;
+            //StockQt = (int) Math.Max(StockQt + 1, Math.Round(StockQt * 1.1));
+            StockPrice = (int) Math.Round((StockPrice * 1.2) / 10) * 10;
         }
     }
 }
