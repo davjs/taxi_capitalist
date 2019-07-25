@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Taxi;
+using TMPro;
 using UnityEngine;
 
 public enum Upgrade {
@@ -14,7 +15,7 @@ public class UpgradeBuilding : MonoBehaviour {
     public Upgrade? CurrentUpgrade = Upgrade.Speed;
     public GameObject SizeIcon;
     public GameObject SpeedIcon;
-    public TextMesh PriceTag;
+    public TextMeshPro PriceTag;
 
     private void Start() {
         ClearUpgrade();
