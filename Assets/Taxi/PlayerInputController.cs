@@ -8,16 +8,26 @@ namespace Taxi
         public float vertical;
         public float gizmoSize = 4;
         private Player _player;
+        private AudioSource vroomSFX;
 
         public void Awake()
         {
             _player = GetComponent<Player>();
+            vroomSFX = GetComponent<AudioSource>();
         }
 
         public void Update() //Read inputs and distribute to other scripts
         {
             horizontal = Input.GetAxis(_player.Id + "_Player_Horizontal");
             vertical = Input.GetAxis(_player.Id + "_Player_Vertical");
+            if (!vroomSFX.isPlaying && (Mathf.Abs(horizontal) > 0.1 || Mathf.Abs(vertical) > 0.1))
+            {
+                vroomSFX.Play();
+            }
+            else if (vroomSFX.isPlaying && (Mathf.Abs(horizontal) < 0.1 && Mathf.Abs(vertical) < 0.1))
+            {
+                vroomSFX.Stop();
+            }
         }
 
         private void OnDrawGizmos()
