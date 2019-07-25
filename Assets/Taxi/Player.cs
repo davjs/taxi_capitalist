@@ -89,5 +89,10 @@ namespace Taxi
 
             return "Black";
         }
+
+        public void EarnInterest(int value)
+        {
+            EarnMoney((int)((Stocks / 100.0f) * value));
+        }
     }
 }

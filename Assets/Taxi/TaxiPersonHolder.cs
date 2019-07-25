@@ -20,6 +20,13 @@ namespace Taxi
 
             var player = GetComponent<Player>();
             player.EarnMoney(Capacity * Price);
+
+            var allPlayers = GameObject.FindGameObjectsWithTag("Player");
+
+            foreach (var obj in allPlayers)
+            {
+                obj.GetComponent<Player>().EarnInterest(Capacity * Price);
+            }
         }
 
         public bool CanFitMore()
