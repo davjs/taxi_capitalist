@@ -50,7 +50,7 @@ namespace Taxi {
         private void OnCollisionEnter(Collision collision) {
             if (collision.gameObject.tag == "Player") {
                 var player1Speed = rb.velocity.magnitude;
-                var player2Speed = collision.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude;
+                var player2Speed = collision.gameObject.GetComponentInParent<Rigidbody2D>().velocity.magnitude;
                 if (player1Speed > player2Speed) {
                     EarnMoney(1);
                 }
