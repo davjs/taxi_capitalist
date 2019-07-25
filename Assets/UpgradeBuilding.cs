@@ -35,7 +35,7 @@ public class UpgradeBuilding : MonoBehaviour
         var personHolder = other.gameObject.GetComponentInParent<TaxiPersonHolder>();
         if (!taxiController || !personHolder || player.Money < Cost || CurrentUpgrade == null) return;
 
-        if (CurrentUpgrade == Upgrade.Speed && !player.SpeedUpgrade)
+        if (CurrentUpgrade == Upgrade.Speed)
         {
             taxiController.velocity += SpeedIncrease;
             player.Money -= Cost;
