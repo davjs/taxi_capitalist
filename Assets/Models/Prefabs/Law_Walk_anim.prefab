@@ -489,6 +489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2719240702423183054}
   - component: {fileID: 5419709156458431412}
+  - component: {fileID: 8108335820885821332}
   m_Layer: 0
   m_Name: Law_Walk_anim
   m_TagString: Untagged
@@ -532,6 +533,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8108335820885821332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434386422791494877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851f60f96b211ca41956ab90a4acd3b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1458348663201835983
 GameObject:
   m_ObjectHideFlags: 0
