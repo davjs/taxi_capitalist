@@ -31,7 +31,7 @@ public class TextMeshManager : MonoBehaviour
                 tmp.color = Color.magenta;
                 break;
             case "4":
-                tmp.color = Color.blue;
+                tmp.color = Color.yellow;
                 break;
             default:
                 tmp.color = Color.white;
