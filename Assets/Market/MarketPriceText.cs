@@ -18,7 +18,7 @@ public class MarketPriceText : MonoBehaviour
 
     void Update()
     {
-        _text.text = _market.StockQt + "% Share \n$" + _market.StockPrice;
+        _text.text = "INVEST \n$" + _market.StockPrice;
     }
 
     private Player FindPlayerWithId(string id)
