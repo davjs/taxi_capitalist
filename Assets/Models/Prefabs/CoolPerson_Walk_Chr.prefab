@@ -912,7 +912,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 6034957751646507721, guid: a25b2c2c605797c4398bd2c18e4bd76f, type: 3}
+  - {fileID: 2100000, guid: 9c5c0782d24c4fa429f1fd0ae4d1ac4a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1273,6 +1273,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8078224198535625394}
   - component: {fileID: 3846402651766878740}
+  - component: {fileID: -5260074501246728742}
+  - component: {fileID: 1506465212999953119}
+  - component: {fileID: 343311325929809389}
   m_Layer: 0
   m_Name: CoolPerson_Walk_Chr
   m_TagString: Untagged
@@ -1288,7 +1291,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5062265622943549601}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -45.75048, y: 0.05, z: 2.9925492}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 60, y: 60, z: 60}
   m_Children:
   - {fileID: 8383812813802871560}
@@ -1306,8 +1309,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5062265622943549601}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 67aeaf81916a9fd44a2fa6eb848b1327, type: 2}
+  m_Avatar: {fileID: 9000000, guid: 60b45feba24fb634684495b12a1d607d, type: 3}
+  m_Controller: {fileID: 9100000, guid: dfe1d92ec1544dc4e8881b58542eef18, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1316,6 +1319,47 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-5260074501246728742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5062265622943549601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851f60f96b211ca41956ab90a4acd3b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &1506465212999953119
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5062265622943549601}
+  serializedVersion: 2
+  m_Mass: 0.0001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &343311325929809389
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5062265622943549601}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.030000016, y: 0.05000004, z: 0.02575514}
+  m_Center: {x: 0, y: 0.02500002, z: -0.0026580058}
 --- !u!1 &5150652805762707523
 GameObject:
   m_ObjectHideFlags: 0

@@ -24,13 +24,13 @@ namespace scenery
 
         private IEnumerator SpawnPedestriansAtPoint(Transform spawn)
         {
-            yield return new WaitForSeconds(Random.Range(20, 40));
+            yield return new WaitForSeconds(Random.Range(5, 15));
 
             while (true)
             {
                 var randomPrefab = Pedestrians[Random.Range(0, Pedestrians.Length)];
                 var pedestrian = Instantiate(randomPrefab, spawn.position, spawn.rotation);
-                Destroy(pedestrian, 20);
+                Destroy(pedestrian, 40);
 
                 yield return new WaitForSeconds(Random.Range(30, 40));
             }

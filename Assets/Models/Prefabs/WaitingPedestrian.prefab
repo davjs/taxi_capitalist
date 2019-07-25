@@ -766,7 +766,7 @@ GameObject:
   - component: {fileID: 1622803772425567258}
   - component: {fileID: 8651230919816008032}
   m_Layer: 0
-  m_Name: wating_model
+  m_Name: WaitingPedestrian
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -780,7 +780,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2368333435623181833}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.032463, y: 0.050000004, z: -42.898777}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1353204285674773920}

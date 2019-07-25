@@ -1,44 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1107 &-4807744574379251989
-AnimatorStateMachine:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Base Layer
-  m_ChildStates:
-  - serializedVersion: 1
-    m_State: {fileID: 3346792700389775220}
-    m_Position: {x: 170.56406, y: 277.52057, z: 0}
-  m_ChildStateMachines: []
-  m_AnyStateTransitions: []
-  m_EntryTransitions: []
-  m_StateMachineTransitions: {}
-  m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 50, y: 20, z: 0}
-  m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
-  m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 3346792700389775220}
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Cool_AC
+  m_Name: LittleGirl_AC
   serializedVersion: 5
   m_AnimatorParameters: []
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
-<<<<<<< HEAD
-    m_StateMachine: {fileID: -4807744574379251989}
-=======
-    m_StateMachine: {fileID: 1518288038044826259}
->>>>>>> d9d370c010ade211b0fe8a11cb9d4d1ca9ab0065
+    m_StateMachine: {fileID: 3247508053953927535}
     m_Mask: {fileID: 0}
     m_Motions: []
     m_Behaviours: []
@@ -48,10 +22,7 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
-<<<<<<< HEAD
---- !u!1102 &3346792700389775220
-=======
---- !u!1107 &1518288038044826259
+--- !u!1107 &3247508053953927535
 AnimatorStateMachine:
   serializedVersion: 5
   m_ObjectHideFlags: 1
@@ -61,8 +32,8 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 7796776592953999426}
-    m_Position: {x: 416, y: 58, z: 0}
+    m_State: {fileID: 4345989821603359333}
+    m_Position: {x: 375, y: 390, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -72,9 +43,8 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 7796776592953999426}
---- !u!1102 &7796776592953999426
->>>>>>> d9d370c010ade211b0fe8a11cb9d4d1ca9ab0065
+  m_DefaultState: {fileID: 4345989821603359333}
+--- !u!1102 &4345989821603359333
 AnimatorState:
   serializedVersion: 5
   m_ObjectHideFlags: 1
@@ -94,7 +64,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 1827226128182048838, guid: 60b45feba24fb634684495b12a1d607d,
+  m_Motion: {fileID: 1827226128182048838, guid: 8ccd8e79480c8004fbb0c3a1e7ee0283,
     type: 3}
   m_Tag: 
   m_SpeedParameter: 

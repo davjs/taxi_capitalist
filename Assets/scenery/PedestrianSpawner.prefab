@@ -45,3 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Pedestrians:
   - {fileID: 1921347884160173452, guid: fa48714f18179444fa4eaab589bc159f, type: 3}
+  - {fileID: 5062265622943549601, guid: d290edef3f445ce4f848457f115373bc, type: 3}
+  - {fileID: 1434386422791494877, guid: 53e24ac4e6e7cbd4a97f93bb9b0c411c, type: 3}
+  - {fileID: 2340818315659217511, guid: 0381e015d8de7ac4cadc5f3797a94685, type: 3}
+  - {fileID: 1921347884160173452, guid: fa48714f18179444fa4eaab589bc159f, type: 3}
