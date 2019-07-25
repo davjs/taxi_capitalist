@@ -7,7 +7,7 @@ namespace Taxi
         private int _loadedPassengers;
 
         private const int Price = 100;
-        private const int Capacity = 1;
+        public int Capacity = 1;
 
         public void LoadPersons()
         {
