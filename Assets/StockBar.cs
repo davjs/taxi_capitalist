@@ -10,6 +10,7 @@ public class StockBar : MonoBehaviour {
     public float StocksGoal = 100;
 
     private Player _player;
+    public Light light;
 
     private void Start() {
         _player = GameObject.FindGameObjectsWithTag("Player")
@@ -17,6 +18,8 @@ public class StockBar : MonoBehaviour {
             .GetComponent<Player>();
         var mesh = GetComponentInChildren<MeshRenderer>();
         mesh.material.color = _player.GetColor();
+        light = GetComponentInChildren<Light>();
+        light.color = _player.GetColor();
     }
 
     private void Update() {
