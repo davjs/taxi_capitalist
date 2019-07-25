@@ -24,7 +24,7 @@ namespace scenery
 
         private IEnumerator SpawnPedestriansAtPoint(Transform spawn)
         {
-            yield return new WaitForSeconds(Random.Range(5, 15));
+            yield return new WaitForSeconds(Random.Range(0, 4));
 
             while (true)
             {
