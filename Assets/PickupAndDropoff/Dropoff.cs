@@ -19,7 +19,7 @@ public class Dropoff : MonoBehaviour
             Spawner.RegisterDropoffAtPointByPlayer(OriginalSpawnPoint);
 
             var personHolder = Player.GetComponent<TaxiPersonHolder>();
-            personHolder.UnloadPersons();
+            personHolder.UnloadPerson();
 
             Destroy(gameObject);
         }

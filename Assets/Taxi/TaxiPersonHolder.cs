@@ -17,12 +17,17 @@ namespace Taxi
             _loadedPassengers += 1;
         }
 
-        public void UnloadPersons()
+        public bool CanFitMore()
+        {
+            return _loadedPassengers < Capacity;
+        }
+
+        public void UnloadPerson()
         {
             _loadedPassengers -= 1;
 
             var player = GetComponent<Player>();
-            var sumMoney = Capacity * Price;
+            var sumMoney = Price;
             player.EarnMoney(sumMoney + player.CalculateInterest(sumMoney));
 
             var allPlayers = GameObject.FindGameObjectsWithTag("Player")
@@ -34,11 +39,6 @@ namespace Taxi
                 obj.EarnMoney(obj.CalculateInterest(sumMoney));
             }
             AudioManager.instance.Play("Dropoff");
-        }
-
-        public bool CanFitMore()
-        {
-            return _loadedPassengers < Capacity;
         }
     }
 }

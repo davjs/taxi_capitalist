@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using Taxi;
 using TMPro;
 using UnityEngine;
@@ -14,7 +13,7 @@ public enum Upgrade
 
 public class UpgradeBuilding : MonoBehaviour
 {
-    [NonSerialized] public int Cost = 1000;
+    [NonSerialized] public int Cost = 10;
     [NonSerialized] public float SpeedIncrease = 500f;
     public Upgrade? CurrentUpgrade = Upgrade.Speed;
     public GameObject SizeIcon;
@@ -25,6 +24,8 @@ public class UpgradeBuilding : MonoBehaviour
     {
         ClearUpgrade();
         Invoke("GetNewUpgrade", 5f);
+
+        StartCoroutine(SwapUpgrades());
     }
 
     private void OnTriggerEnter(Collider other)
@@ -40,15 +41,16 @@ public class UpgradeBuilding : MonoBehaviour
             player.Money -= Cost;
             player.SpeedUpgrade = true;
             ClearUpgrade();
-            Invoke("GetNewUpgrade", 0.5f);
         }
 
         if (CurrentUpgrade == Upgrade.Size)
         {
             personHolder.Capacity += 1;
             player.Money -= Cost;
+            player.gameObject.transform.localScale *= 1.35f;
+            player.gameObject.transform.position += Vector3.up * 2;
+
             ClearUpgrade();
-            Invoke("GetNewUpgrade", 5f);
         }
     }
 
@@ -72,6 +74,19 @@ public class UpgradeBuilding : MonoBehaviour
         if (CurrentUpgrade == Upgrade.Speed)
         {
             SpeedIcon.SetActive(true);
+        }
+    }
+
+    private IEnumerator SwapUpgrades()
+    {
+        yield return new WaitForSeconds(10);
+
+        while (true)
+        {
+            ClearUpgrade();
+            GetNewUpgrade();
+
+            yield return new WaitForSeconds(10);
         }
     }
 }
