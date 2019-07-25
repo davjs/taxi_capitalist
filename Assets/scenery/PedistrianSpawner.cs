@@ -18,14 +18,14 @@ namespace scenery
 
             foreach (var spawn in _spawns)
             {
-                StartCoroutine(SpawnPedestriansAtPoint(spawn, Random.Range(4, 6)));
+                StartCoroutine(SpawnPedestriansAtPoint(spawn));
             }
         }
 
 
-        private IEnumerator SpawnPedestriansAtPoint(Transform spawn, float delay)
+        private IEnumerator SpawnPedestriansAtPoint(Transform spawn)
         {
-            yield return new WaitForSeconds(Random.Range(1, 5));
+            yield return new WaitForSeconds(Random.Range(10, 30));
 
             while (true)
             {
@@ -33,7 +33,7 @@ namespace scenery
                 var pedestrian = Instantiate(randomPrefab, spawn.position, spawn.rotation);
                 Destroy(pedestrian, 20);
 
-                yield return new WaitForSeconds(Random.Range(10, 20));
+                yield return new WaitForSeconds(Random.Range(10, 30));
             }
         }
     }

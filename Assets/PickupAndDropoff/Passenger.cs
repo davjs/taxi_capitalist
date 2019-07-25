@@ -35,7 +35,8 @@ namespace PickupAndDropoff
 
                 _body.isKinematic = false;
                 GetComponentInChildren<Animator>().enabled = false;
-                _body.AddForce(((Vector3.up * 2) + (Vector3.forward * Random.value * .75f)) * .0012f, ForceMode.Impulse);
+                _body.AddForce(((Vector3.up * 2) + (Vector3.forward * Random.value * .75f)) * .0012f,
+                    ForceMode.Impulse);
 
                 return;
             }

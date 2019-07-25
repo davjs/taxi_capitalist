@@ -32,6 +32,8 @@ public class Walker : MonoBehaviour
 
             var rigidbody = GetComponent<Rigidbody>();
             rigidbody.AddForce(((Vector3.up) + (rigidbody.velocity * .75f)) * .0006f, ForceMode.Impulse);
+
+            Destroy(gameObject, 5);
         }
     }
 }
